@@ -8,25 +8,21 @@ class Balance {
     let asciiValue = await getRequestASCIIValue(requestString);
     let response = "";
 
-    if (requestString.toLowerCase() == "s" || requestString.toLowerCase() == "s\\n") {
+    if (asciiValue == "[0x73,0x5c,0x6e]" || asciiValue == "[0x73]") {
 
       let weightValue = getRandomWeightValue();
-      console.log(weightValue)
 
       if (weightValue > 120) {
 
         response = `Su+`;
-        console.log();
 
-      } else if (weightValue < 1.4) {
+      } else if (weightValue < 0.0014) {
 
         response = `Su-`;
-        console.log();
 
       } else {
 
         response = `SuSuuuuu${weightValue}.00ug`;
-        console.log();
 
       }
 
