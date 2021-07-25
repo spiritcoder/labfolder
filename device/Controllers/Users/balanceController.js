@@ -8,7 +8,7 @@ class Balance {
     let asciiValue = await getRequestASCIIValue(requestString);
     let response = "";
 
-    if (asciiValue == "[0x73,0x5c,0x6e]" || asciiValue == "[0x73]") {
+    if (asciiValue == "[0x73,0x0a]" || asciiValue == "[0x73]") {
 
       let weightValue = getRandomWeightValue();
 

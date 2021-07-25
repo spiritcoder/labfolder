@@ -11,6 +11,10 @@
 3. Run npm install to download all node module dependencies
 4. Run npm run start to start the device
 
+
+# TO SIMULATE THE SYSTEM
+send an HTTP get request to this endpoint http://localhost:5001/getBalance?requestString=s where "s" is the value you want to send from the driver to the device.
+
 # Assumptions
 I assumed the analytical balance device is the XPE which as a maximum measured weight capacity of 120g and a minimum weight capacity of 1.4mg(0.0014g)
 
